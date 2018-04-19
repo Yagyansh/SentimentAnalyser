@@ -1,0 +1,30 @@
+
+ Run Commands:
+
+ 1)python ./code/DataCleaner.py ./dataset/trainingDatasetComplete.txt ./dataset/trainingDatasetProcessed.txt ./dataset/example_tweets.txt
+
+
+ 2) ./ark-tweet-nlp/runTagger.sh ./dataset/example_tweets.txt > ./dataset/trainingTokenised.txt
+
+
+ 3)python ./code/Combiner.py ./dataset/trainingDatasetProcessed.txt ./dataset/trainingTokenised.txt ./dataset/finalTrainingInput.txt
+
+
+ 4)python ./code/DataCleaner.py ./dataset/testingDatasetComplete.txt ./dataset/testingDatasetProcessed.txt ./dataset/example_tweets.txt
+
+
+ 5) ./ark-tweet-nlp/runTagger.sh ./dataset/example_tweets.txt > ./dataset/testingTokenised.txt
+
+
+ 6)python ./code/Combiner.py ./dataset/testingDatasetProcessed.txt ./dataset/testingTokenised.txt /dataset/finalTestingInput.txt
+
+
+ 7)python ./code/Main.py ./dataset/finalTrainingInput.txt ./dataset/finalTestingInput.txt
+
+
+ 8)python ./code/F1Accuracy.py ./code/taskA.gs ./code/taskA.pred
+  
+  
+
+    
+
